@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements Paulba National High School</title>
+    <link rel="shortcut icon" href="pics/logo.png">
+    <style>
+*{
+    scroll-behavior: smooth;
+    padding: 0%;
+    margin: 0%;
+    background-repeat: no-repeat;
+}
+.head{
+    width: 1365px;
+    background-color: #F6F6F6;
+    height: 100px;
+    position: fixed;
+    z-index: 5;
+}
+.head img{
+    width: 100px;
+    height: 100px;
+    position:fixed;
+    margin-left: 30px;
+}
+.head h1{
+    position:absolute;
+    font-family: 'montserrat-extra-bold', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    color: #00497E;
+    margin-left: 150px;
+    margin-top: 1px;
+}
+.nav{
+    width: 1365px;
+    height: 40px;
+    background-color: #00497E;
+    position: fixed;
+    margin-top: 100px;
+    z-index: 1;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav li {
+    float: left;
+}
+.nav li a {
+    display: block;
+    color:#F6F6F6;
+    text-align: center;
+    padding: 10px 35px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 70px;
+    font-family:'Times New Roman', Times, serif;
+}
+.nav li a:hover {
+    background-color:#F6F6F6;
+    color:#00497E;
+}
+.mis{
+    background-color: #C8D3DB;
+    width: 1365px;
+    height: 141px;
+    position: relative; 
+}
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F6F6F6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 940px;
+    margin-top: 40px;
+}
+.dropdown-content a {
+    color: #00497E;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #00497E;
+    color: #F6F6F6;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.cont{
+    background-color: #00497E;
+    width: 1365px;
+    height: 150px; 
+    position: relative;
+}
+.cont p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #C8D3DB;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+.cont h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #C8D3DB;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 700px;
+    font-weight: 100;
+}
+.cont img{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -230px;
+}
+.container{
+    position: relative;
+    width: 50px;
+}
+.ali{
+    width: 1365px;
+    height: 30px;
+    background-color: #00497E;
+    position: relative;
+}
+.ali h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #C8D3DB;
+    font-size: 15px;
+    margin-top: 2px;
+    text-align: center;
+}
+.a{
+    background-color: #C8D3DB;
+    width: 1365px;
+    height: 900px;
+    position: relative; 
+}
+.a h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.a p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 50px;
+}
+.b h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.b p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.c h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.c p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 165px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.d h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 205px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.d p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 225px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.e h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.e p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.f h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.f p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.g h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.g p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.h h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 395px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.h p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 415px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.i h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 455px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.i p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 475px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.j h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 495px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.j p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 515px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.k h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 540px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.k p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 560px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.l h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 580px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.l p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.m h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 620px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.m p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    position: absolute;
+    margin-top: 640px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+    </style>
+</head>
+<body>
+    <header class="head">
+        <h1>PAULBA NATIONAL HIGH SCHOOL</h1>
+        <img src="pics/logo.png" alt="">
+    </header>
+    <div class="nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="admin.html">Administration</a></li>
+            <li><a href="announce.html">Announcements</a></li>
+                <div class="dropdown">
+                    <li><a class="dropbtn">Academics</a></li>
+                    <div class="dropdown-content">
+                        <a href="enroll.html">Online Enrollment</a>
+                        <a href="require.html">Programs</a>
+                    </div>
+                </div>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+    <section><div class="mis"></div>
+    </section>
+    <section>
+        <div class="a">
+            <div>
+                <h1>December 3, 2022</h1>
+                <p> Paulba National High School joins the observance of the 18 Day Campaign
+                to end the violence against women(VAW) November 25- December 12, 2022. </p>
+            </div>
+            <div class="b">
+                <h1>December 3, 2022</h1>
+                <p>BSP as they sung joyous  hymns and extended their wishes of a happy christmas.</p>
+            </div>
+            <div class="c">
+                <h1>December 1, 2022</h1>
+                <p>In support of DepEd Order No. 43 s. 2013 (Implementing Rules and Regulations of RA 10533), Reading Month Celebration (Buwan at Araw ng Pagbasa was successfully conducted at Paulba National High School . Its culminating activities were done last November 28-29, 2022. 
+                    It aimed to foster better understanding of the importance of reading and literary arts among the students. </p>
+            </div>
+            <div class="d">
+                <h1>December 1, 2022</h1>
+                <p>Something magical happened as the school came together to read books and celebrated the incomparable joy of reading. #NationalReadingMonth2022 </p>
+            </div>
+            <div class="e">
+                <h1>November 29, 2022</h1>
+                <p>Diligent students and distinguished teachers at Paulba NHS enjoying the adventures within the pages of the book. Like what Garrison Keillor said, "A book is a gift you can open again and again". Come and visit our book pantries! Share the love through a book!
+                    #shareabookdrive </p>
+            </div>
+            <div class="f">
+                <h1>November 28, 2022</h1>
+                <p>PNHS joined transforming reading into a continuous thread. Students had the euphoric experience that reading provides. Let us make reading a habit! </p>
+            </div>
+            <div class="g">
+                <h1>November 27, 2022</h1>
+                <p>As still part of our NSTW 2022 , all SHS Science students are required to accomplish a picto-narrative report. It will be part of their requirements in Science subjects/courses.</p>
+            </div>
+            <div class="h">
+                <h1>November 16, 2022</h1>
+                <p>Sa mga magulang na nagpapaaral sa PAULBA NHS, 
+                    Kung sainyong tingin ay delikado para sainyong students ang pagpasok dala ng pag uulan, maari po nilang gamitin ang modules na ibinigay sa kanila at ipasa ang outputs sa kanilang subject teachers pagbalik ng school. 
+                -School Head</p>
+            </div>
+            <div class="i">
+                <h1>October 3, 2022</h1>
+                <p>To our great educators, Happy World Teacher's Day! Maraming Salamat po! </p>
+            </div>
+            <div class="j">
+                 <h1>October 1, 2022</h1>
+                 <p>Are you ready? Paulbanians! Let us join force as we ignite the spark and get amazed. Discover and learn best with Wizards! ....Soon!</p>
+            </div>
+            <div class="k">
+                <h1>September 27, 2022</h1>
+                <p>Paulba NHS SSG President Cathleen P. Celis is the Newly-Elected Ligao City DIVISION FEDERATED VICE PRESIDENT SY 2022-2023.  </p>
+            </div>
+            <div class="l">
+                <h1>September 26, 2022</h1>
+                <p>Classes in all levels resume tomorrow, September 27, 2022 in Schools Division of Ligao City.</p>
+            </div>
+            <div class="m">
+                <h1>September 25, 2022</h1>
+                <p>Due to tropical cyclone Karding, classes are suspended tomorrow, September 26,2022. Stay updated and be safe!</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="cont">
+        <p>Paulba National High School <br>
+            Paulba, Ligao City <br>
+            4504 Region V Philippines <br>
+            Telephone number: -0948-494-6029 <br>
+        </p>
+        <h1>Paulba National High School &copy 2022
+        <a href="https://www.facebook.com/paulbanhsofficial"><img src="pics/fb.png" alt="" width="50" height="50"></a></h1>
+    </div>
+    </section>
+    <section>
+        <div class="ali">
+            <hr>
+            <h1>All Rights Reserved &copy Aliza Juarez 2022</h1>            
+        </div>       
+    </section>
+</body>
+</html>

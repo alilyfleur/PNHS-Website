@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrators of Paulba National High School</title>
+    <link rel="shortcut icon" href="pics/logo.png">
+    <style>
+*{
+    scroll-behavior: smooth;
+    padding: 0%;
+    margin: 0%;
+    background-repeat: no-repeat;
+}
+.head{
+    width: 1365px;
+    background-color: #F6F6F6;
+    height: 100px;
+    position: fixed;
+    z-index: 5;
+}
+.head img{
+    width: 100px;
+    height: 100px;
+    position:fixed;
+    margin-left: 30px;
+}
+.head h1{
+    position:absolute;
+    font-family: 'montserrat-extra-bold', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    color: #00497E;
+    margin-left: 150px;
+    margin-top: 1px;
+}
+.nav{
+    width: 1365px;
+    height: 40px;
+    background-color: #00497E;
+    position: fixed;
+    margin-top: 100px;
+    z-index: 1;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav li {
+    float: left;
+}
+.nav li a {
+    display: block;
+    color:#F6F6F6;
+    text-align: center;
+    padding: 10px 35px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 70px;
+    font-family:'Times New Roman', Times, serif;
+}
+.nav li a:hover {
+    background-color:#F6F6F6;
+    color:#00497E;
+}
+.mis{
+    background-color: #C8D3DB;
+    width: 1365px;
+    height: 141px;
+    position: relative; 
+}
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F6F6F6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 940px;
+    margin-top: 40px;
+}
+.dropdown-content a {
+    color: #00497E;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #00497E;
+    color: #F6F6F6;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.cont{
+    background-color: #00497E;
+    width: 1365px;
+    height: 150px; 
+    position: relative;
+}
+.cont p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #C8D3DB;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+.cont h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #C8D3DB;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 700px;
+    font-weight: 100;
+}
+.cont img{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -230px;
+}
+.container{
+    position: relative;
+    width: 50px;
+}
+.ali{
+    width: 1365px;
+    height: 30px;
+    background-color: #00497E;
+    position: relative;
+}
+.ali h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #C8D3DB;
+    font-size: 15px;
+    margin-top: 2px;
+    text-align: center;
+}
+.history {
+    position: relative;
+    margin: 0 auto;
+}
+  
+.history img {
+    vertical-align: middle;
+    position: relative;
+}
+.history .row {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: #00497eb6; 
+    color: #f1f1f1;
+    width: 1365px;
+    height: 1095px;
+}
+.row h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: #F6F6F6;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    position: relative;
+}
+.row p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 40px;
+    color:#F6F6F6;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.roww h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: #F6F6F6;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+}
+.roww p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 40px;
+    color:#F6F6F6;
+}
+.column1 {
+    width: 20%;
+    padding: 10px;
+    position: relative;
+}
+.column1 img {
+    opacity: 0.9; 
+    cursor: pointer; 
+    position: absolute;
+    margin-left: 525px;
+    margin-top: 80px;
+    border-style:ridge;
+    border-color: #00497E;
+}
+.column1 img:hover {
+    opacity: 1;
+}
+.t1{
+    width: auto;
+    position: relative;
+}
+.t1 h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    color: black;
+    margin-top: 310px;
+    margin-left: 570px;
+    font-weight: 100;
+    position: absolute;
+}
+.t1 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    margin-top: 330px;
+    margin-left: 600px;
+    width:fit-content;
+    position: absolute;
+}
+.column2 {
+    width: 20%;
+    padding: 10px;
+    position: relative;
+}
+.column2 img {
+    opacity: 0.9; 
+    cursor: pointer; 
+    position: absolute;
+    margin-left: 525px;
+    margin-top: 350px;
+    border-style:ridge;
+    border-color: #00497E;
+}
+.column2 img:hover {
+    opacity: 1;
+}
+.t2{
+    width: auto;
+    position: relative;
+}
+.t2 h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    color: black;
+    margin-top: 585px;
+    margin-left: 600px;
+    font-weight: 100;
+    position: absolute;
+}
+.t2 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    margin-top: 605px;
+    margin-left: 590px;
+    width:fit-content;
+    position: absolute;
+}
+.column3 {
+    width: 20%;
+    padding: 10px;
+    position: relative;
+}
+.column3 img {
+    opacity: 0.9; 
+    cursor: pointer; 
+    position: absolute;
+    margin-left: 525px;
+    margin-top: 625px;
+    border-style:ridge;
+    border-color: #00497E;
+}
+.column3 img:hover {
+    opacity: 1;
+}
+.t3{
+    width: auto;
+    position: relative;
+}
+.t3 h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    color: black;
+    margin-top: 855px;
+    margin-left: 550px;
+    font-weight: 100;
+    position: absolute;
+}
+.t3 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    margin-top: 875px;
+    margin-left: 620px;
+    width:fit-content;
+    position: absolute;
+}
+.column4 {
+    width: 20%;
+    padding: 10px;
+    position: relative;
+}
+.column4 img {
+    opacity: 0.9; 
+    cursor: pointer; 
+    position: absolute;
+    margin-left: 525px;
+    margin-top: 890px;
+    border-style:ridge;
+    border-color: #00497E;
+}
+.column4 img:hover {
+    opacity: 1;
+}
+.t4{
+    width: auto;
+    position: relative;
+}
+.t4 h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    color: black;
+    margin-top: 1115px;
+    margin-left: 565px;
+    font-weight: 100;
+    position: absolute;
+}
+.t4 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    margin-top: 1135px;
+    margin-left: 620px;
+    width:fit-content;
+    position: absolute;
+}
+.column5 {
+    width: 20%;
+    padding: 10px;
+    position: relative;
+}
+.column5 img {
+    opacity: 0.9; 
+    cursor: pointer; 
+    position: absolute;
+    margin-left: 525px;
+    margin-top: 1150px;
+    border-style:ridge;
+    border-color: #00497E;
+}
+.column5 img:hover {
+    opacity: 1;
+}
+.t5{
+    width: auto;
+    position: relative;
+}
+.t5 h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    color: black;
+    margin-top: 1380px;
+    margin-left: 580px;
+    font-weight: 100;
+    position: absolute;
+}
+.t5 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    margin-top: 1400px;
+    margin-left: 605px;
+    width:fit-content;
+    position: absolute;
+}
+.column6 {
+    width: 20%;
+    padding: 10px;
+    position: relative;
+}
+.column6 img {
+    opacity: 0.9; 
+    cursor: pointer; 
+    position: absolute;
+    margin-left: 525px;
+    margin-top: 1410px;
+    border-style:ridge;
+    border-color: #00497E;
+}
+.column6 img:hover {
+    opacity: 1;
+}
+.t6{
+    width: auto;
+    position: relative;
+}
+.t6 h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    color: black;
+    margin-top: 1640px;
+    margin-left: 560px;
+    font-weight: 100;
+    position: absolute;
+}
+.t6 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    margin-top: 1660px;
+    margin-left: 580px;
+    width:fit-content;
+    position: absolute;
+}
+.column7 {
+    width: 20%;
+    padding: 10px;
+    position: relative;
+}
+.column7 img {
+    opacity: 0.9; 
+    cursor: pointer; 
+    position: absolute;
+    margin-left: 525px;
+    margin-top: 1680px;
+    border-style:ridge;
+    border-color: #00497E;
+}
+.column7 img:hover {
+    opacity: 1;
+}
+.t7{
+    width: auto;
+    position: relative;
+}
+.t7 h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    color: black;
+    margin-top: 1915px;
+    margin-left: 560px;
+    font-weight: 100;
+    position: absolute;
+}
+.t7 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #00497E;
+    margin-top: 1935px;
+    margin-left: 585px;
+    width:fit-content;
+    position: absolute;
+}
+.ror{
+    width: 1365px;
+    height: 2150px;
+    background-color: #C8D3DB;
+    position: relative;
+}
+.ror:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.intro{
+    position: relative;
+}
+.intro h1{
+    font-family: 'montserrat-extra-bold', sans-serif;
+    font-weight: 700;
+    color: #00497E;
+    margin-left: 490px;
+    position: absolute;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.container {
+    position: relative;
+    display: none;
+}
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header class="head">
+        <h1>PAULBA NATIONAL HIGH SCHOOL</h1>
+        <img src="pics/logo.png" alt="">
+    </header>
+    <div class="nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="admin.html">Administration</a></li>
+            <li><a href="announce.html">Announcements</a></li>
+            <div class="dropdown">
+                <li><a class="dropbtn">Academics</a></li>
+                <div class="dropdown-content">
+                    <a href="enroll.html">Online Enrollment</a>
+                </div>
+            </div>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+    <section><div class="mis"></div></section>
+    <section>
+            <div class="ror">
+                <div class="intro">
+                    <h1>THE ADMINISTRATORS</h1>
+                </div>
+                <div class="column1">
+                  <img src="admins/prin.jpg" alt="" style="width:80%" >
+                </div>
+                <div class="t1">
+                    <h1>LEO ERWIN LINDIO</h1>
+                    <p>Head Principal</p>
+                  </div>
+                <div class="column2">
+                  <img src="admins/assis.jpg" alt="\" style="width:80%">
+                </div>
+                <div class="t2">
+                    <h1>RUSSEL ASIS</h1>
+                    <p>Assistant Principal</p>
+                </div>
+                <div class="column3">
+                  <img src="admins/lib.jpg" alt="" style="width:80%">
+                </div>
+                <div class="t3">
+                    <h1>NERISA RET BENISANO</h1>
+                    <p>Librarian</p>
+                </div>
+                <div class="column4">
+                  <img src="admins/registrar.jpg" alt="" style="width:80%">
+                </div>
+                <div class="t4">
+                    <h1>CRISTINA PAYANAY</h1>
+                    <p>Registrar</p>
+                </div>
+                <div class="column5">
+                    <img src="admins/clinic.jpg" alt="" style="width:80%">
+                </div>
+                <div class="t5">
+                    <h1>FRANZ JOSETTE</h1>
+                    <p>School Nurse</p>
+                </div>
+                <div class="column6">
+                    <img src="admins/gsp.jpg" alt="" style="width:80%">
+                </div>
+                <div class="t6">
+                    <h1>ANA LIZA REYTERAN</h1>
+                    <p>Girl Scout Coordinator</p>
+                </div>
+                <div class="column7">
+                    <img src="admins/bsp.jpg" alt="" style="width:80%">
+                </div>
+                <div class="t7">
+                      <h1>ALQUEEN REYTERAN</h1>
+                      <p>Boy Scout Coordinator</p>
+                </div>
+              </div>    
+    </section>
+    <section>
+        <div class="cont">
+            <p>Paulba National High School <br>
+            Paulba, Ligao City <br>
+            4504 Region V Philippines <br>
+            Telephone number: -0948-494-6029 <br></p>
+            <h1>Paulba National High School &copy 2022
+            <a href="https://www.facebook.com/paulbanhsofficial"><img src="pics/fb.png" alt="" width="50" height="50"></a></h1>
+    </div>
+    </section>
+    <section>
+        <div class="ali">
+            <hr>
+            <h1>All Rights Reserved &copy Aliza Juarez 2022</h1>            
+        </div>       
+    </section>
+</body>
+</html>

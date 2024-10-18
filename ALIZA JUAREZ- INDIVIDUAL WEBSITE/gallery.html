@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Paulba National High School</title>
+    <link rel="shortcut icon" href="pics/logo.png">
+    <style>
+*{
+    scroll-behavior: smooth;
+    padding: 0%;
+    margin: 0%;
+    background-repeat: no-repeat;
+}
+.head{
+    width: 1365px;
+    background-color: #F6F6F6;
+    height: 100px;
+    position: fixed;
+    z-index: 5;
+}
+.head img{
+    width: 100px;
+    height: 100px;
+    position:fixed;
+    margin-left: 30px;
+}
+.head h1{
+    position:absolute;
+    font-family: 'montserrat-extra-bold', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    color: #00497E;
+    margin-left: 150px;
+    margin-top: 1px;
+}
+.nav{
+    width: 1365px;
+    height: 40px;
+    background-color: #00497E;
+    position: fixed;
+    margin-top: 100px;
+    z-index: 1;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav li {
+    float: left;
+}
+.nav li a {
+    display: block;
+    color:#F6F6F6;
+    text-align: center;
+    padding: 10px 35px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 70px;
+    font-family:'Times New Roman', Times, serif;
+}
+.nav li a:hover {
+    background-color:#F6F6F6;
+    color:#00497E;
+}
+.mis{
+    background-color: #C8D3DB;
+    width: 1365px;
+    height: 140px;
+    position: relative; 
+}
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F6F6F6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 940px;
+    margin-top: 40px;
+}
+.dropdown-content a {
+    color: #00497E;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #00497E;
+    color: #F6F6F6;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.container{
+    position: relative;
+    width: 50px;
+}
+.container p{
+    position: absolute;
+    margin-left: 720px;
+    margin-top: 60px;
+}
+.ali{
+    width: 1365px;
+    height: 30px;
+    background-color: #00497E;
+    position: relative;
+}
+.ali h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #C8D3DB;
+    font-size: 15px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.gal{
+    width: 1365px;
+    height: 990px;
+    position: relative; 
+    background-color: #C8D3DB;
+}
+.img-gallery{
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5px;
+    column-gap: 5px;
+    position: absolute;
+}
+.img-gallery img{
+    width: 100%;
+    cursor: pointer;
+    border-style:solid;
+    border-width: 2px;
+    border-color: #00497E;
+
+}
+.img-gallery img:hover{
+    transform: scale(0.8);
+}
+.container {
+    position:fixed;
+    display: none;
+    width: 55%;
+    margin-left: 580px;
+    margin-top: 40px;
+  }
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <header class="head">
+        <h1>PAULBA NATIONAL HIGH SCHOOL</h1>
+        <img src="pics/logo.png" alt="">
+    </header>
+    <div class="nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="admin.html">Administration</a></li>
+            <li><a href="announce.html">Announcements</a></li>
+                <div class="dropdown">
+                    <li><a class="dropbtn">Academics</a></li>
+                    <div class="dropdown-content">
+                        <a href="enroll.html">Online Enrollment</a>
+                        <a href="require.html">Programs</a>
+                    </div>
+                </div>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+    <section><div class="mis"></div>
+    </section>
+    <section>
+      <div class="gal">
+      <div class="img-gallery">
+        <img src="imggal/gal1.jpg" onclick="myFunction(this);">
+        <img src="imggal/gal2.jpg" onclick="myFunction(this);">
+        <img src="imggal/gal3.jpg" onclick="myFunction(this);">
+        <img src="imggal/gal4.jpg" onclick="myFunction(this);">
+        <img src="imggal/gal5.jpg" onclick="myFunction(this);">
+        <img src="imggal/gal6.jpg" onclick="myFunction(this);">
+        <img src="imggal/gal8.jpg" onclick="myFunction(this);">
+        <img src="imggal/gal9.jpg" onclick="myFunction(this);">
+        <img src="imggal/gal10.jpg" onclick="myFunction(this);">
+        <img src="imggal/gal11.jpg" onclick="myFunction(this);">
+        <img src="imggal/gal12.jpg" onclick="myFunction(this);">
+        <img src="imggal/gal7.jpg" onclick="myFunction(this);">
+    </div>
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+    </section>
+    <section>
+        <div class="ali">
+            <hr>
+            <h1>All Rights Reserved &copy Aliza Juarez 2022</h1>            
+        </div>       
+    </section>
+    <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+    </script>
+</body>
+</html>

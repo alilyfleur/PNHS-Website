@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics Paulba National High School</title>
+    <link rel="shortcut icon" href="pics/logo.png">
+    <style>
+*{
+    scroll-behavior: smooth;
+    padding: 0%;
+    margin: 0%;
+    background-repeat: no-repeat;
+}
+.head{
+    width: 1365px;
+    background-color: #F6F6F6;
+    height: 100px;
+    position: fixed;
+    z-index: 5;
+}
+.head img{
+    width: 100px;
+    height: 100px;
+    position:fixed;
+    margin-left: 30px;
+}
+.head h1{
+    position:absolute;
+    font-family: 'montserrat-extra-bold', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    color: #00497E;
+    margin-left: 150px;
+    margin-top: 1px;
+}
+.nav{
+    width: 1365px;
+    height: 40px;
+    background-color: #00497E;
+    position: fixed;
+    margin-top: 100px;
+    z-index: 1;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav li {
+    float: left;
+}
+.nav li a {
+    display: block;
+    color:#F6F6F6;
+    text-align: center;
+    padding: 10px 35px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 70px;
+    font-family:'Times New Roman', Times, serif;
+}
+.nav li a:hover {
+    background-color:#F6F6F6;
+    color:#00497E;
+}
+.mis{
+    background-color: #C8D3DB;
+    width: 1365px;
+    height: 141px;
+    position: relative; 
+}
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F6F6F6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 940px;
+    margin-top: 40px;
+}
+.dropdown-content a {
+    color: #00497E;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #00497E;
+    color: #F6F6F6;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.history {
+    position: relative;
+    margin: 0 auto;
+}
+  
+.history img {
+    vertical-align: middle;
+    position: relative;
+}
+.history .row {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: #00497eb6; 
+    color: #f1f1f1;
+    width: 1365px;
+    height: 1095px;
+}
+.row h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: #F6F6F6;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    position: relative;
+}
+.row p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 40px;
+    color:#F6F6F6;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.roww h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: #F6F6F6;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+}
+.roww p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 40px;
+    color:#F6F6F6;
+}
+.ror{
+    width: 1365px;
+    height: 2150px;
+    background-color: #C8D3DB;
+    position: relative;
+}
+.ror:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    position: relative;
+    display: none;
+}
+.cont{
+    background-color: #00497E;
+    width: 1365px;
+    height: 150px; 
+    position: relative;
+}
+.cont p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #C8D3DB;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+.cont h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #C8D3DB;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 700px;
+    font-weight: 100;
+}
+.cont img{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -230px;
+}
+.container{
+    position: relative;
+    width: 50px;
+}
+.ali{
+    width: 1365px;
+    height: 30px;
+    background-color: #00497E;
+    position: relative;
+}
+.ali h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #C8D3DB;
+    font-size: 15px;
+    margin-top: 2px;
+    text-align: center;
+}
+.p{
+    background-color: #C8D3DB;
+    width: 1365px;
+    height:600px;
+    position: relative; 
+}
+.p h1{
+    color: #00497E;
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 500px;
+}
+.edu h1{
+    color: #00497E;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+.edu p{
+    color: #00497E;
+    position: absolute;
+    margin-top: 120px;
+    font-size: 18px;
+    margin-left: 70px;
+    display: list-item;
+}
+.edu h2{
+    color: #00497E;
+    position: absolute;
+    margin-top: 140px;
+    font-size: 18px;
+    margin-left: 70px;
+    display: list-item;
+    font-weight: 100;
+}
+.on h1{
+    color: #00497E;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 50px;
+}
+.on a{
+    color: #00497E;
+    position: absolute;
+    margin-top: 220px;
+    font-size: 18px;
+    margin-left: 70px;
+    font-weight: 100;
+    display: list-item;
+}
+.of h1{
+    color: #00497E;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 50px;
+}
+.of a{
+    color: #00497E;
+    position: absolute;
+    margin-top: 300px;
+    font-size: 18px;
+    margin-left: 70px;
+    font-weight: 100;
+    display: list-item;
+}
+.new h1{
+    color: #00497E;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    margin-top: 340px;
+    margin-left: 50px;
+}
+.new p{
+    color: #00497E;
+    position: absolute;
+    margin-top: 380px;
+    font-size: 18px;
+    margin-left: 70px;
+    font-weight: 100;
+    display: list-item;
+}
+.old h1{
+    color: #00497E;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 50px;
+}
+.old p{
+    color: #00497E;
+    position: absolute;
+    margin-top: 450px;
+    font-size: 18px;
+    margin-left: 70px;
+    font-weight: 100;
+    display: list-item;
+}
+    </style>
+</head>
+<body>
+    <header class="head">
+        <h1>PAULBA NATIONAL HIGH SCHOOL</h1>
+        <img src="pics/logo.png" alt="">
+    </header>
+    <div class="nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="admin.html">Administration</a></li>
+            <li><a href="announce.html">Announcements</a></li>
+            <div class="dropdown">
+                <li><a class="dropbtn">Academics</a></li>
+                <div class="dropdown-content">
+                    <a href="enroll.html">Online Enrollment</a>
+                    <a href="require.html">Requirements</a>
+                </div>
+            </div>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+    <section><div class="mis"></div></section>
+    <section>
+        <div class="p">
+            <h1>Enrollment</h1>
+            <div class="edu">
+                <h1>Basic Education</h1>
+                <p>Junior High School</p>
+                <h2>Senior High School</h2>
+            </div>
+            <div class="on">
+                <h1>Online</h1>
+                <a href="https://forms.gle/4ovDytwZr7vuck1T6">Admission Link</a>
+            </div>
+            <div class="of">
+                <h1>On-site</h1>
+                <a href="https://www.google.com/search?q=paulba%20national%20high%20school&rlz=1C1GCEJ_enPH978PH978&oq=paulba+national+&aqs=chrome.0.0i512j69i57j69i60l2.2963j0j9&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:1&tbm=lcl&sxsrf=ALiCzsabXkilgRbT37LrGQ8CGAg_W_Pe4w:1670378925160&rflfq=1&num=10&rldimm=16922814820481097842&lqi=ChtwYXVsYmEgbmF0aW9uYWwgaGlnaCBzY2hvb2xIx8Pv6bOPgIAIWikQARACEAMYABgCGAMiG3BhdWxiYSBuYXRpb25hbCBoaWdoIHNjaG9vbJIBC2hpZ2hfc2Nob29sqgFHCggvbS8wNnpkahABGh8QASIbMQyjD3ULYQ_JBCyhF61Na9uZTVeA5QZiJD_VKhgiFG5hdGlvbmFsIGhpZ2ggc2Nob29sKAA&phdesc=5gZCVyCxbS8&ved=2ahUKEwiOveWztub7AhWbBIgKHYa_AmkQvS56BAgWEAE&sa=X&rlst=f#rlfi=hd:;si:16922814820481097842,l,ChtwYXVsYmEgbmF0aW9uYWwgaGlnaCBzY2hvb2xIx8Pv6bOPgIAIWikQARACEAMYABgCGAMiG3BhdWxiYSBuYXRpb25hbCBoaWdoIHNjaG9vbJIBC2hpZ2hfc2Nob29sqgFHCggvbS8wNnpkahABGh8QASIbMQyjD3ULYQ_JBCyhF61Na9uZTVeA5QZiJD_VKhgiFG5hdGlvbmFsIGhpZ2ggc2Nob29sKAA,y,5gZCVyCxbS8;mv:[[13.4731849,123.7744378],[13.0962319,123.2747524]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:1">
+                    Address 
+                </a>
+            </div>
+            <div class="new">
+                <h1>New Students and Transferees</h1>
+                <p>June 20, 2023-July 20, 2023</p>
+            </div>
+            <div class="old">
+                <h1>Old Students</h1>
+                <p>June 20, 2023-July 20, 2023</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="cont">
+        <p>Paulba National High School <br>
+            Paulba, Ligao City <br>
+            4504 Region V Philippines <br>
+            Telephone number: -0948-494-6029 <br>
+        </p>
+        <h1>Paulba National High School &copy 2022
+            <a href="https://www.facebook.com/paulbanhsofficial"><img src="pics/fb.png" alt="" width="50" height="50"></a>
+        </h1>
+    </div>
+    </section>
+    <section>
+        <div class="ali">
+            <hr>
+            <h1>All Rights Reserved &copy Aliza Juarez 2022</h1>            
+        </div>       
+    </section>
+</body>
+</html>
